@@ -15,7 +15,7 @@ def days_between(d2):
     return abs((d2 - d1).days)
     
 def return_predictions(time, city, date):
-    df = pd.read_csv('data/EXL_EQ_2023_Dataset.csv')
+    df = pd.read_feather('data.feather')
     where = []
     for n, i in enumerate(list(df["Time Periods"])):
         if i[-5:] != time:
