@@ -20,3 +20,4 @@ threadpoolctl
 tzdata
 Werkzeug
 zipp
+gunicorn
